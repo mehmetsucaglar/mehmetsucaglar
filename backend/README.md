@@ -83,14 +83,15 @@ Bütün hatalar aynı biçimdedir:
 
 ```json
 {
-  "id": "event-2",
-  "title": "Docker ile Konteynerlere Giriş",
-  "category": "Atölye",
-  "capacity": 25,
-  "date": "2026-11-24",
-  "time": "10:00",
-  "location": "Mühendislik Fakültesi Lab 4",
-  "description": "Kendi bilgisayarında ilk konteynerini çalıştır, Dockerfile yaz ve imaj oluştur."
+   id: "event-2",
+    title: "Kış Dönemi Satranç Turnuvası",
+    category: "Yarışma",
+    capacity: 64,
+    date: "2026-11-26",
+    time: "14:00",
+    location: "Kampüs Topluluk Odası",
+    description:
+      "Satranç ve Zeka Oyunları Topluluğu'nun düzenlediği eleme usulü turnuvada ilk üçe kupa ve sertifika veriliyor.",
 }
 ```
 
