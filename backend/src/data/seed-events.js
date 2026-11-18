@@ -1,6 +1,5 @@
-export const events = [
+export const seedEvents = [
   {
-    id: "event-1",
     title: "Dağda Güvenlik ve Arama Kurtarma Deneyimleri Söyleşisi",
     category: "Söyleşi",
     capacity: 150,
@@ -11,7 +10,6 @@ export const events = [
       "Davraz Arama Kurtarma Topluluğu, Davraz'daki gerçek kurtarma deneyimlerini ve doğa sporlarında güvenlik kurallarını anlatıyor.",
   },
   {
-    id: "event-2",
     title: "Kış Dönemi Satranç Turnuvası",
     category: "Yarışma",
     capacity: 64,
@@ -22,7 +20,6 @@ export const events = [
       "Satranç ve Zeka Oyunları Topluluğu'nun düzenlediği eleme usulü turnuvada ilk üçe kupa ve sertifika veriliyor.",
   },
   {
-    id: "event-3",
     title: "Sokak Fotoğrafçılığı Atölyesi",
     category: "Atölye",
     capacity: 25,
@@ -33,7 +30,6 @@ export const events = [
       "Fotoğraf Topluluğu ile kadraj, ışık ve anı yakalama üzerine kısa bir eğitim, ardından kampüs çevresinde uygulamalı çekim.",
   },
   {
-    id: "event-4",
     title: "Kampüs E-Spor Kupası",
     category: "Yarışma",
     capacity: 48,
@@ -44,7 +40,6 @@ export const events = [
       "Dijital Oyunlar ve E-Spor Topluluğu, takım halinde oynanan turnuvayla fakülteleri karşı karşıya getiriyor.",
   },
   {
-    id: "event-5",
     title: "Gökyüzü Gözlem Gecesi",
     category: "Seminer",
     capacity: 80,
@@ -55,7 +50,6 @@ export const events = [
       "SPAXDU üyeleri teleskopla Ay ve gezegen gözlemi yaptırıyor, uzay bilimlerine giriş niteliğinde kısa bir sunum yapıyor.",
   },
   {
-    id: "event-6",
     title: "Kısa Film Gösterimi ve Yönetmen Söyleşisi",
     category: "Söyleşi",
     capacity: 200,
