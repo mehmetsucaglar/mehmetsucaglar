@@ -1,6 +1,7 @@
 import { Router } from "express";
 import {
   createEvent,
+  deleteEvent,
   getEventById,
   getEvents,
   getUpcomingEvents,
@@ -14,5 +15,6 @@ router.get("/upcoming", getUpcomingEvents); // /:id'den ÖNCE olmalı
 router.get("/:id", getEventById);
 router.post("/", createEvent);
 router.patch("/:id", updateEvent);
+router.delete("/:id", deleteEvent);
 
 export default router;
