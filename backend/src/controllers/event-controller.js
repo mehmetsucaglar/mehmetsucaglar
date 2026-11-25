@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import { Event } from "../models/event-model.js";
-
+import { todayStart } from "../utils/date.js";
 function notFound(res) {
   return res.status(404).json({ error: { message: "Event not found" } });
 }
@@ -52,6 +52,17 @@ export async function createEvent(req, res, next) {
     if (err.name === "ValidationError") {
       return res.status(400).json({ error: { message: err.message } });
     }
+    next(err);
+  }
+}
+export async function getUpcomingEvents(req, res, next) {
+  try {
+    const events = await Event.find({ date: { $gte: todayStart() } }).sort({
+      date: 1,
+      time: 1,
+    });
+    res.json(events);
+  } catch (err) {
     next(err);
   }
 }
