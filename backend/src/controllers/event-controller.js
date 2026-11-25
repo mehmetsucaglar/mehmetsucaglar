@@ -1,12 +1,25 @@
 import mongoose from "mongoose";
 import { Event } from "../models/event-model.js";
 
+function notFound(res) {
+  return res.status(404).json({ error: { message: "Event not found" } });
+}
+
 export async function getEvents(req, res, next) {
   try {
+    const { category, search } = req.query;
     const filter = {};
-    if (req.query.category) {
-      filter.category = req.query.category;
+
+    if (category) {
+      filter.category = category;
     }
+
+    if (typeof search === "string" && search.trim()) {
+      // ( * ? gibi işaretler aramayı bozmasın
+      const guvenli = search.trim().replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      filter.title = { $regex: guvenli, $options: "i" };
+    }
+
     const events = await Event.find(filter).sort({ date: 1 });
     res.json(events);
   } catch (err) {
@@ -16,15 +29,13 @@ export async function getEvents(req, res, next) {
 
 export async function getEventById(req, res, next) {
   try {
-    const { id } = req.params;
-
-    if (!mongoose.isValidObjectId(id)) {
-      return res.status(404).json({ error: { message: "Event not found" } });
+    if (!mongoose.isValidObjectId(req.params.id)) {
+      return notFound(res);
     }
 
-    const event = await Event.findById(id);
+    const event = await Event.findById(req.params.id);
     if (!event) {
-      return res.status(404).json({ error: { message: "Event not found" } });
+      return notFound(res);
     }
 
     res.json(event);
