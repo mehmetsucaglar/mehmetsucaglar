@@ -3,7 +3,7 @@ export const seedEvents = [
     title: "Dağda Güvenlik ve Arama Kurtarma Deneyimleri Söyleşisi",
     category: "Söyleşi",
     capacity: 150,
-    date: "2026-11-19",
+    date: "19-11-2026",
     time: "18:00",
     location: "Kampüs Konferans Salonu",
     description:
@@ -13,7 +13,7 @@ export const seedEvents = [
     title: "Kış Dönemi Satranç Turnuvası",
     category: "Yarışma",
     capacity: 64,
-    date: "2026-11-26",
+    date: "21-11-2026",
     time: "14:00",
     location: "Kampüs Topluluk Odası",
     description:
@@ -23,7 +23,7 @@ export const seedEvents = [
     title: "Sokak Fotoğrafçılığı Atölyesi",
     category: "Atölye",
     capacity: 25,
-    date: "2026-12-03",
+    date: "03-12-2026",
     time: "10:00",
     location: "Kampüs Topluluk Odası",
     description:
@@ -33,7 +33,7 @@ export const seedEvents = [
     title: "Kampüs E-Spor Kupası",
     category: "Yarışma",
     capacity: 48,
-    date: "2026-12-10",
+    date: "10-12-2026",
     time: "13:00",
     location: "Bilgisayar Laboratuvarı",
     description:
@@ -43,7 +43,7 @@ export const seedEvents = [
     title: "Gökyüzü Gözlem Gecesi",
     category: "Seminer",
     capacity: 80,
-    date: "2026-12-17",
+    date: "17-12-2026",
     time: "19:30",
     location: "Kampüs Topluluk Odası",
     description:
@@ -53,7 +53,7 @@ export const seedEvents = [
     title: "Kısa Film Gösterimi ve Yönetmen Söyleşisi",
     category: "Söyleşi",
     capacity: 200,
-    date: "2027-01-07",
+    date: "07-01-2027",
     time: "16:30",
     location: "Kültür Merkezi Salonu",
     description:
